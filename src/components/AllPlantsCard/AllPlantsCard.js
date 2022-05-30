@@ -5,12 +5,10 @@ const imageStyle = {
   width: "240px",
   height: "240px",
 };
-const MonsteraCard = () => {
+const AllPlantsCard = () => {
   const { data } = useContext(dataContext);
 
-  const monstera = data.filter((word) => word.id === 1 || word.id === 2);
-
-  return monstera.map((plants) => {
+  return data.map((plants) => {
     return (
       <div className='plantsCard' key={plants.id}>
         <img style={imageStyle} src={plants.image} alt='deded' />
@@ -20,4 +18,4 @@ const MonsteraCard = () => {
   });
 };
 
-export default MonsteraCard;
+export default AllPlantsCard;

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Philodendron Gloriosum",
+    "image": "https://static.wixstatic.com/media/eced3c_8436a5b78e5f42ceb6c655ddfde0f139~mv2.jpeg/v1/fill/w_750,h_1125,al_c,q_85,usm_0.66_1.00_0.01/eced3c_8436a5b78e5f42ceb6c655ddfde0f139~mv2.webp",
+    "lighting": "Indirect light is very important. Look for a well-lit place to take full advantage of its leaves.",
+    "irrigation": "It prefers the soil to be kept slightly moist. They are very expressive, so you will notice that as soon as it lacks water it becomes limp. In summer water 2 or 3 times a week and in winter, 1 or 2, especially if there is heating. It does not like very cold water ('cold feet'). Tip: let the water stand in the room for a few hours to allow it to reach room temperature.",
+    "temperature": "Between 15 and 25 degrees. It does not tolerate cold or frost, so try not to subject it to temperatures below 15 degrees. It also does not like drafts.",
+    "humidity": "Humidity is very important for it. If you live in a dry environment, there is heating or air conditioning, it is advisable to spray its leaves often. One solution is to place them near a humidifier or place a plate at the base of the pot with balls of clay or volcanic clay and water - without touching the pot - to increase the humidity. Another trick is to place several plants together, they cooperate with each other, form their own ecosystem and share the humidity they generate."
+  },
+  {
+    "id": 2,
+    "name": "Philodendron Micans",
+    "image": "https://img-1.versacommerce.de/resize=1024x1024/canvas=1024x1024/++/assets.versacommerce.de/images/0ee671cc8ad0a315ede51abf7bdadc320a8d3183.jpg",
+    "lighting": "Philodendron Micans likes to receive plenty of indirect light. Direct sun can burn its leaves. It is best to make sure that, if placed in a window, it does not receive direct sunlight on its leaves. Therefore, if your window is facing south, it may be advisable to place a translucent curtain or place your Philodendron in an area further away from direct light.Outdoor cultivation will be done in semi-shade, in a place where it can be protected from the sun's rays. Philodendron Micans can tolerate low light levels, however, its growth will be slower. In addition, its leaves will look smaller and there will be more space between them.",
+    "irrigation": "Let the top layers of the substrate dry out before watering again. To check this, you can stick your finger into the substrate, and if it is dry, then it is time to water. It is important not to let the soil dry out completely between watering, as this could damage the plant.Water the pot from the top until the water runs out of the drainage holes. In general, watering will always depend on the amount of light your Philodendron receives. You will need to water more in the warmer months and water more frequently in the winter.",
+    "temperature": "The ideal temperature for Philodendron Micans is between 18 - 30ºC . It can withstand higher temperatures provided it has sufficient humidity. It does not tolerate frost. Your Micans philodendron will appreciate it if you spray its leaves, especially during the warmer seasons.",
+    "humidity": "Because of its tropical origin, Philodendron Micans likes high humidity. You can increase humidity levels around your plant by spraying its leaves with a spray bottle (at least a couple of times a week), placing it over a dish with water and small pebbles, or using a humidifier."
+  }
+]

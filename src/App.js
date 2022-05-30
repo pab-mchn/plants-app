@@ -1,5 +1,5 @@
 import DataProvider from "./components/context/DataContext";
-import MonsteraCard from "./components/MonsteraCard/MonsteraCard";
+import Checkbox from "./components/Checkbox/Checkbox";
 import "./App.css";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <DataProvider>
       <div className='App'>
         <h1>Hola</h1>
-        <MonsteraCard />
+        <Checkbox />
       </div>
     </DataProvider>
   );

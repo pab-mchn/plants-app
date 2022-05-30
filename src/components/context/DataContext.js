@@ -7,7 +7,7 @@ const DataProvider = ({ children }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios("./data/monstera.json").then((res) => setData(res.data));
+    axios("./data/data.json").then((res) => setData(res.data));
   }, []);
   console.log(data);
 
