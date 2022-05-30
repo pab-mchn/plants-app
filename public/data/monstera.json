@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Monstera Karstenianum / Perú",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRUkfp_M7xKRco6UmcJn0HvQdeLSPUXAa0rg&usqp=CAU",
+    "lighting": " Luminous place, with indirect light. It tolerates semi-shade (medium indirect light), but it will grow more slowly and its leaves will be smaller. Avoid direct sun if you do not want to burn its leaves.",
+    "irrigation": "Moderate, without waterlogging the substrate!Allow the top half of the substrate to dry between waterings. Remove any excess water left in the potting tray.",
+    "temperature": "Procura que la temperatura no baje de los 10-15 grados, ya sabes, son monsteras ;)",
+    "humidity": "¡Le gusta la humedad! Es una todo terreno y se adapta a cualquier ambiente, pero si pulverizas las durante las épocas calurosas o si enciendes la calefacción, te lo agradecerá creciendo pimpante y frondosa. Si le limpias las hojas de vez en cuando con un paño húmedo le ayudarás a hacer la fotosíntesis."
+  },
+  {
+    "id": 1,
+    "name": "Monstera Varriegata",
+    "image": "https://cdn.shopify.com/s/files/1/0396/1592/2342/products/IMG_9487_1200x1200.jpg?v=1642613772",
+    "lighting": " Luminous place, with indirect light. It tolerates semi-shade (medium indirect light), but it will grow more slowly and its leaves will be smaller. Avoid direct sun if you do not want to burn its leaves.",
+    "irrigation": "Moderate, without waterlogging the substrate!Allow the top half of the substrate to dry between waterings. Remove any excess water left in the potting tray.",
+    "temperature": "Procura que la temperatura no baje de los 10-15 grados, ya sabes, son monsteras ;)",
+    "humidity": "¡Le gusta la humedad! Es una todo terreno y se adapta a cualquier ambiente, pero si pulverizas las durante las épocas calurosas o si enciendes la calefacción, te lo agradecerá creciendo pimpante y frondosa. Si le limpias las hojas de vez en cuando con un paño húmedo le ayudarás a hacer la fotosíntesis."
+  }
+]
