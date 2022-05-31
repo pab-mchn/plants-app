@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import { dataContext } from "../context/DataContext";
 
 const imageStyle = {
@@ -8,13 +9,17 @@ const imageStyle = {
 const MonsteraCard = () => {
   const { data } = useContext(dataContext);
 
-  const monstera = data.filter((word) => word.id === 1 || word.id === 2);
+  const monsteras = data.filter(
+    (monstera) => monstera.id === 1 || monstera.id === 2
+  );
 
-  return monstera.map((plants) => {
+  return monsteras.map((plants) => {
     return (
       <div className='plantsCard' key={plants.id}>
-        <img style={imageStyle} src={plants.image} alt='deded' />
-        <h5>{plants.name}</h5>
+        <Link to={`/${plants.id}`}>
+          <img style={imageStyle} src={plants.image} alt='Monstera Picture' />
+          <h5>{plants.name}</h5>
+        </Link>
       </div>
     );
   });

@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { dataContext } from "../context/DataContext";
+import { Link } from "react-router-dom";
 
 const imageStyle = {
   width: "240px",
@@ -14,8 +15,10 @@ const PhiladendronCard = () => {
   return philadendrons.map((philadendron) => {
     return (
       <div className='plantsCard' key={philadendron.id}>
-        <img style={imageStyle} src={philadendron.image} alt='deded' />
-        <h5>{philadendron.name}</h5>
+        <Link to={`/${philadendron.id}`}>
+          <img style={imageStyle} src={philadendron.image} alt='deded' />
+          <h5>{philadendron.name}</h5>
+        </Link>
       </div>
     );
   });
