@@ -1,6 +1,7 @@
 import DataProvider from "./components/context/DataContext";
 import Checkbox from "./components/Checkbox/Checkbox";
 import PlantsDetails from "./components/PlantsDetails/PlantsDetails";
+import Home from "./components/Home/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
@@ -10,7 +11,8 @@ function App() {
       <div className='App'>
         <BrowserRouter>
           <Routes>
-            <Route path='/' element={<Checkbox />} />
+            <Route path='/' element={<Home />} />
+            <Route path='/explore' element={<Checkbox />} />
             <Route path='/:id' element={<PlantsDetails />} />
           </Routes>
         </BrowserRouter>
