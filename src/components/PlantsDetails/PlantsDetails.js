@@ -13,7 +13,7 @@ function PlantsDetails() {
   const [detail, setDetail] = useState([]);
 
   useEffect(() => {
-    axios(`http://localhost:3000/plants/${id}`).then((res) =>
+    axios(`https://randomapiplants.herokuapp.com/plants/${id}`).then((res) =>
       setDetail(res.data)
     );
   }, []);

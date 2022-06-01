@@ -9,19 +9,21 @@ const DataProvider = ({ children }) => {
   const [philadendronCategory, setphiladendronCategory] = useState([]);
 
   useEffect(() => {
-    axios("http://localhost:3000/db").then((res) => setData(res.data.plants));
-  }, []);
-
-  useEffect(() => {
-    axios("http://localhost:3000/categories/1/plants").then((res) =>
-      setMonsteraCategory(res.data)
+    axios("https://randomapiplants.herokuapp.com/db").then((res) =>
+      setData(res.data.plants)
     );
   }, []);
 
   useEffect(() => {
-    axios("http://localhost:3000/categories/2/plants").then((res) =>
-      setphiladendronCategory(res.data)
-    );
+    axios(
+      "https://randomapiplants.herokuapp.com/categories/1/plants"
+    ).then((res) => setMonsteraCategory(res.data));
+  }, []);
+
+  useEffect(() => {
+    axios(
+      "https://randomapiplants.herokuapp.com/categories/2/plants"
+    ).then((res) => setphiladendronCategory(res.data));
   }, []);
   console.log(monsteraCategory);
 
