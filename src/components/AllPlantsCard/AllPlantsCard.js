@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import { dataContext } from "../context/DataContext";
 
 const imageStyle = {
@@ -11,8 +12,10 @@ const AllPlantsCard = () => {
   return data.map((plants) => {
     return (
       <div className='plantsCard' key={plants.id}>
-        <img style={imageStyle} src={plants.image} alt='deded' />
-        <h5>{plants.name}</h5>
+        <Link to={`/${plants.id}`}>
+          <img style={imageStyle} src={plants.image} alt='deded' />
+          <h5>{plants.name}</h5>
+        </Link>
       </div>
     );
   });

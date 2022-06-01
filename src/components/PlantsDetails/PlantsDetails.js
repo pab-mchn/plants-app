@@ -1,6 +1,5 @@
 import React from "react";
-import { useContext, useEffect, useState } from "react";
-import { dataContext } from "../context/DataContext";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 
@@ -11,7 +10,6 @@ const imageStyle = {
 
 function PlantsDetails() {
   const { id } = useParams();
-  const { data } = useContext(dataContext);
   const [detail, setDetail] = useState([]);
 
   useEffect(() => {
@@ -24,7 +22,11 @@ function PlantsDetails() {
   return (
     <div className='plantsCard' key={detail.id}>
       <img style={imageStyle} src={detail.image} alt='Monstera Picture' />
-      <h5>{detail.name}</h5>
+      <p>{detail.name}</p>
+      <p>Lighting : {detail.lighting}</p>
+      <p>Irragation: {detail.irrigation}</p>
+      <p>Temperature: {detail.temperature}</p>
+      <p>Humidity: {detail.humidity}</p>
     </div>
   );
 }

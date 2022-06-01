@@ -8,11 +8,9 @@ const imageStyle = {
 };
 
 const PhiladendronCard = () => {
-  const { data } = useContext(dataContext);
+  const { philadendronCategory } = useContext(dataContext);
 
-  const philadendrons = data.filter((word) => word.id === 3 || word.id === 4);
-
-  return philadendrons.map((philadendron) => {
+  return philadendronCategory.map((philadendron) => {
     return (
       <div className='plantsCard' key={philadendron.id}>
         <Link to={`/${philadendron.id}`}>

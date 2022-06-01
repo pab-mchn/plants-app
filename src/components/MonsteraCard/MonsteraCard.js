@@ -7,13 +7,9 @@ const imageStyle = {
   height: "240px",
 };
 const MonsteraCard = () => {
-  const { data } = useContext(dataContext);
+  const { monsteraCategory } = useContext(dataContext);
 
-  const monsteras = data.filter(
-    (monstera) => monstera.id === 1 || monstera.id === 2
-  );
-
-  return monsteras.map((plants) => {
+  return monsteraCategory.map((plants) => {
     return (
       <div className='plantsCard' key={plants.id}>
         <Link to={`/${plants.id}`}>
