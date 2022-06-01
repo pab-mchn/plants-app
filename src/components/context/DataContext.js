@@ -7,7 +7,7 @@ const DataProvider = ({ children }) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios("./data/data.json").then((res) => setData(res.data));
+    axios("http://localhost:3000/db").then((res) => setData(res.data.plants));
   }, []);
   console.log(data);
 
