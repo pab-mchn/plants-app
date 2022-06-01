@@ -1,0 +1,39 @@
+.containerHome {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1900px;
+  margin-block: 2rem;
+  gap: 2rem;
+}
+
+.card__header > img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ece9e6;
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+}
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #999;
+}
+.card__body > h4 {
+  color: #4d4d4d;
+}
+span {
+  color: #4d4d4d;
+}

@@ -2,11 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-
-const imageStyle = {
-  width: "240px",
-  height: "240px",
-};
+import "./PlantsDetails.css";
 
 function PlantsDetails() {
   const { id } = useParams();
@@ -20,13 +16,27 @@ function PlantsDetails() {
   console.log(detail);
 
   return (
-    <div className='plantsCard' key={detail.id}>
-      <img style={imageStyle} src={detail.image} alt='Monstera Picture' />
-      <p>{detail.name}</p>
-      <p>Lighting : {detail.lighting}</p>
-      <p>Irragation: {detail.irrigation}</p>
-      <p>Temperature: {detail.temperature}</p>
-      <p>Humidity: {detail.humidity}</p>
+    <div class='containerHome' key={detail.id}>
+      <div class='card'>
+        <div class='card__header'>
+          <img src={detail.image} alt='Monstera Picture' />
+        </div>
+        <div class='card__body'>
+          <h4>{detail.name}</h4>
+          <p>
+            <span>Lighting:</span> {detail.lighting}
+          </p>
+          <p>
+            <span>Irrigation:</span> {detail.irrigation}
+          </p>
+          <p>
+            <span>Temperature:</span> {detail.temperature}
+          </p>
+          <p>
+            <span>Humidity:</span> {detail.humidity}
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

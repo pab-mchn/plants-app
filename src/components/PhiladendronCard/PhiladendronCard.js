@@ -14,7 +14,11 @@ const PhiladendronCard = () => {
     return (
       <div className='plantsCard' key={philadendron.id}>
         <Link to={`/${philadendron.id}`}>
-          <img style={imageStyle} src={philadendron.image} alt='deded' />
+          <img
+            style={imageStyle}
+            src={philadendron.image}
+            alt='Philadendron picture'
+          />
           <h5>{philadendron.name}</h5>
         </Link>
       </div>

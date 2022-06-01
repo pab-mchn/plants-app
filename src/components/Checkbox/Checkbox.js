@@ -2,6 +2,7 @@ import { useState } from "react";
 import MonsteraCard from "../MonsteraCard/MonsteraCard";
 import PhiladendronCard from "../PhiladendronCard/PhiladendronCard";
 import AllPlantsCard from "../AllPlantsCard/AllPlantsCard";
+import "./Checkbox.css";
 
 const Checkbox = () => {
   const [checkedMonsteras, setCheckedMonsteras] = useState(false);

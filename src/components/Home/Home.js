@@ -10,7 +10,7 @@ const Home = () => {
           <h1>Search and Explore Beatifull Plants</h1>
           <p>The best place for yours green bodys</p>
           <Link to={"/explore"} className='btn btn-flat'>
-            Apply now
+            Get Started
           </Link>
         </div>
       </div>
