@@ -5,12 +5,19 @@ export const dataContext = createContext();
 
 const DataProvider = ({ children }) => {
   const [data, setData] = useState([]);
+  const [categories, setCategories] = useState([]);
   const [monsteraCategory, setMonsteraCategory] = useState([]);
   const [philadendronCategory, setphiladendronCategory] = useState([]);
 
   useEffect(() => {
     axios("https://randomapiplants.herokuapp.com/db").then((res) =>
       setData(res.data.plants)
+    );
+  }, []);
+
+  useEffect(() => {
+    axios("https://randomapiplants.herokuapp.com/categories").then((res) =>
+      setCategories(res.data)
     );
   }, []);
 
@@ -31,6 +38,7 @@ const DataProvider = ({ children }) => {
     <dataContext.Provider
       value={{
         data,
+        categories,
         monsteraCategory,
         philadendronCategory,
       }}>

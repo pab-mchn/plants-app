@@ -22,7 +22,7 @@ function PlantsDetails() {
           <img src={detail.image} alt='Monstera Picture' />
         </div>
         <div class='card__body'>
-          <h4>{detail.name}</h4>
+          <h3>{detail.name}</h3>
           <p>
             <span>Lighting:</span> {detail.lighting}
           </p>

@@ -3,7 +3,10 @@ import MonsteraCard from "../MonsteraCard/MonsteraCard";
 import PhiladendronCard from "../PhiladendronCard/PhiladendronCard";
 import AllPlantsCard from "../AllPlantsCard/AllPlantsCard";
 import "./Checkbox.css";
-
+//mapear categorias
+//poner el contenido en una card
+//asignar un boton por cada categoria
+//al apretar el boton mostrar el componente de la catgoria asignado
 const Checkbox = () => {
   const [checkedMonsteras, setCheckedMonsteras] = useState(false);
   const [checkedPhiladendrons, setCheckedPhiladendrons] = useState(false);
