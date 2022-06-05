@@ -16,8 +16,8 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/explore' element={<Checkbox />} />
             <Route path='/:id' element={<PlantsDetails />} />
-            <Route path='/1' element={<MonsteraCard />} />
-            <Route path='/2' element={<PhiladendronCard />} />
+            <Route path='/categorie/1' element={<MonsteraCard />} />
+            <Route path='/categorie/2' element={<PhiladendronCard />} />
           </Routes>
         </BrowserRouter>
       </div>

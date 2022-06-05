@@ -17,7 +17,7 @@ const Checkbox = () => {
     return (
       <>
         <div className='cateries-container'>
-          <Link to={`/${categorie.id}`}>
+          <Link to={`/categorie/${categorie.id}`}>
             <div className='categories-card' key={categorie.id}>
               <img
                 src='https://images.pexels.com/photos/1599969/pexels-photo-1599969.jpeg'
