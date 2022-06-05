@@ -1,43 +1,35 @@
-import { useState } from "react";
-import MonsteraCard from "../MonsteraCard/MonsteraCard";
-import PhiladendronCard from "../PhiladendronCard/PhiladendronCard";
-import AllPlantsCard from "../AllPlantsCard/AllPlantsCard";
+import { useState, useContext } from "react";
+import { dataContext } from "../context/DataContext";
+import { Link } from "react-router-dom";
+
 import "./Checkbox.css";
+
 //mapear categorias
 //poner el contenido en una card
-//asignar un boton por cada categoria
+//asignar un link por cada categoria
 //al apretar el boton mostrar el componente de la catgoria asignado
-const Checkbox = () => {
-  const [checkedMonsteras, setCheckedMonsteras] = useState(false);
-  const [checkedPhiladendrons, setCheckedPhiladendrons] = useState(false);
-  return (
-    <>
-      <form>
-        <input
-          type='checkbox'
-          name='Monsteras'
-          checked={checkedMonsteras}
-          onChange={(e) => setCheckedMonsteras(e.target.checked)}
-        />
-        <label htmlFor='characters'>Monsteras</label>
+//se puede probar en app poniendo la ruta dela categoria con el id, poniendo en este componente que ese id sea dinamico segun la cateogria clickeada!
 
-        <input
-          type='checkbox'
-          name='Philadendrons'
-          checked={checkedPhiladendrons}
-          onChange={(e) => setCheckedPhiladendrons(e.target.checked)}
-        />
-        <label htmlFor='locations'>Philadendrons</label>
-      </form>
-      {checkedMonsteras === true || checkedPhiladendrons === true ? (
-        ""
-      ) : (
-        <AllPlantsCard />
-      )}
-      {checkedMonsteras ? <MonsteraCard /> : ""}
-      {checkedPhiladendrons ? <PhiladendronCard /> : ""}
-    </>
-  );
+const Checkbox = () => {
+  const { categories } = useContext(dataContext);
+
+  return categories.map((categorie) => {
+    return (
+      <>
+        <div className='cateries-container'>
+          <Link to={`/${categorie.id}`}>
+            <div className='categories-card' key={categorie.id}>
+              <img
+                src='https://images.pexels.com/photos/1599969/pexels-photo-1599969.jpeg'
+                alt=''
+              />
+              <p className='categories-title'>{categorie.name}</p>
+            </div>
+          </Link>
+        </div>
+      </>
+    );
+  });
 };
 
 export default Checkbox;
