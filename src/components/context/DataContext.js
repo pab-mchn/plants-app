@@ -8,6 +8,7 @@ const DataProvider = ({ children }) => {
   const [categories, setCategories] = useState([]);
   const [monsteraCategory, setMonsteraCategory] = useState([]);
   const [philadendronCategory, setphiladendronCategory] = useState([]);
+  const [alocasiaCategory, setAlocasiaCategory] = useState([]);
 
   useEffect(() => {
     axios("https://randomapiplants.herokuapp.com/db").then((res) =>
@@ -32,7 +33,12 @@ const DataProvider = ({ children }) => {
       "https://randomapiplants.herokuapp.com/categories/2/plants"
     ).then((res) => setphiladendronCategory(res.data));
   }, []);
-  console.log(monsteraCategory);
+
+  useEffect(() => {
+    axios(
+      "https://randomapiplants.herokuapp.com/categories/3/plants"
+    ).then((res) => setAlocasiaCategory(res.data));
+  }, []);
 
   return (
     <dataContext.Provider
@@ -41,6 +47,7 @@ const DataProvider = ({ children }) => {
         categories,
         monsteraCategory,
         philadendronCategory,
+        alocasiaCategory,
       }}>
       {children}
     </dataContext.Provider>

@@ -27,7 +27,7 @@ function PlantsDetails() {
             <span>Lighting:</span> {detail.lighting}
           </p>
           <p>
-            <span>Irrigation:</span> {detail.irrigation}
+            <span>Watering:</span> {detail.watering}
           </p>
           <p>
             <span>Temperature:</span> {detail.temperature}
