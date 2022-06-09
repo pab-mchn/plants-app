@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { dataContext } from "../context/DataContext";
 import { Link } from "react-router-dom";
+import AllPlantsCard from "../AllPlantsCard/AllPlantsCard";
+import "./Categories.css";
 
-import "./Checkbox.css";
-
-const Checkbox = () => {
+const Categories = () => {
   const { categories } = useContext(dataContext);
 
   return categories.map((categorie) => {
@@ -17,7 +17,7 @@ const Checkbox = () => {
                 src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRClt0JQhAmWFLJMs6L_J07yVOaN8IJHtagbg&usqp=CAU'
                 alt=''
               />
-              <p className='categories-title'>{categorie.name}</p>
+              <a className='categories-title'>{categorie.name}</a>
             </div>
           </Link>
         </div>
@@ -26,4 +26,4 @@ const Checkbox = () => {
   });
 };
 
-export default Checkbox;
+export default Categories;

@@ -8,10 +8,12 @@
   height: 300px;
   perspective: 1000px;
   display: inline-block;
-  margin: 15px;
 }
 
 a {
   text-decoration: none;
+  color: #999;
+}
+.exploreTittle {
   color: #999;
 }
