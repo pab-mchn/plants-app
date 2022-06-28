@@ -9,19 +9,17 @@ const Categories = () => {
 
   return categories.map((categorie) => {
     return (
-      <>
-        <div className='cateries-container'>
+      <div className='cateries-container'>
+        <div className='categories-card' key={categorie.id}>
           <Link to={`/categorie/${categorie.id}`}>
-            <div className='categories-card' key={categorie.id}>
-              <img
-                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRClt0JQhAmWFLJMs6L_J07yVOaN8IJHtagbg&usqp=CAU'
-                alt=''
-              />
-              <a className='categories-title'>{categorie.name}</a>
-            </div>
+            <img
+              src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRClt0JQhAmWFLJMs6L_J07yVOaN8IJHtagbg&usqp=CAU'
+              alt=''
+            />
+            {categorie.name}
           </Link>
         </div>
-      </>
+      </div>
     );
   });
 };
