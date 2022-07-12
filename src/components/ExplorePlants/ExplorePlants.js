@@ -4,7 +4,9 @@ import AllPlantsCard from "../AllPlantsCard/AllPlantsCard";
 const ExplorePlants = () => {
   return (
     <>
-      <Categories />
+      <div className='categories-container'>
+        <Categories />
+      </div>
       <h1 className='exploreTittle'>Explore all our Plants</h1>
       <AllPlantsCard />
     </>

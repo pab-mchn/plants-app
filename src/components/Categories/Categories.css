@@ -1,15 +1,14 @@
 .cateries-container {
-  display: inline-block;
-  width: auto;
-  padding: 5px;
-}
-.categories-card {
-  width: 170px;
-  margin: 20px;
-  text-align: center;
+  overflow: auto;
+  white-space: nowrap;
 }
 
-.categories-card > a > img {
-  height: 150px;
-  width: 200px;
+.categories-card {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  margin: 30px 1%;
+  padding: 14px;
+  text-decoration: none;
+  background: #1bcb7f;
 }
