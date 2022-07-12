@@ -12,3 +12,7 @@
   text-decoration: none;
   background: #1bcb7f;
 }
+
+.categories-card:hover {
+  background: #0db96f;
+}
