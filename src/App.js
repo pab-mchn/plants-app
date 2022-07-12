@@ -6,14 +6,14 @@ import PhiladendronCard from "./components/PhiladendronCard/PhiladendronCard";
 import AlocasiaCard from "./components/AlocasiaCard/AlocasiaCard";
 import Home from "./components/Home/Home";
 import ExplorePlants from "./components/ExplorePlants/ExplorePlants";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 function App() {
   return (
     <DataProvider>
       <div className='App'>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/explore' element={<ExplorePlants />} />
@@ -22,7 +22,7 @@ function App() {
             <Route path='/categorie/2' element={<PhiladendronCard />} />
             <Route path='/categorie/3' element={<AlocasiaCard />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </div>
     </DataProvider>
   );
